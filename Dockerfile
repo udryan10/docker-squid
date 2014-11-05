@@ -8,4 +8,4 @@ ADD squid.conf /etc/squid/
 EXPOSE 3128
 VOLUME ["/var/log/squid"]
 
-CMD /usr/sbin/squid && tail -f /var/log/squid/access.log
+CMD [ "sh", "-c", "/usr/sbin/squid", "&&", "sleep 5", "&&", "tail -f /var/log/squid/access.log" ]
