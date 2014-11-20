@@ -1,4 +1,2 @@
 # Run the squid job every night
-SHELL=/bin/bash
-PATH=/sbin:/bin:/usr/sbin:/usr/bin
 * * * * * root /usr/sbin/logrotate -f /squid.logrotate
