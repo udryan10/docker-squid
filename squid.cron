@@ -1,2 +1,2 @@
 # Run the squid job every night
-* * * * * root /usr/sbin/logrotate -f /squid.logrotate
+59 23 * * * root /usr/sbin/logrotate -f /squid.logrotate
